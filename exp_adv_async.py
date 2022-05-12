@@ -3,7 +3,9 @@ import asyncio
 import time
 
 start_time = time.time()
-
+import platform
+if platform.system()=='Windows':
+    asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
 
 async def get_pokemon(session, url):
     async with session.get(url) as resp:
@@ -22,7 +24,7 @@ async def main():
 
         original_pokemon = await asyncio.gather(*tasks)
         for pokemon in original_pokemon:
-            passs
+            pass
             # print(pokemon)
 
 asyncio.run(main())
