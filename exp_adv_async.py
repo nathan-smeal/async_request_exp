@@ -1,11 +1,13 @@
 import aiohttp
 import asyncio
 import time
-
-start_time = time.time()
 import platform
 if platform.system()=='Windows':
     asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
+
+print("Starting Advanced Async Experiment")
+
+start_time = time.time()
 
 async def get_pokemon(session, url):
     async with session.get(url) as resp:

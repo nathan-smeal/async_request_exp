@@ -1,6 +1,7 @@
 import requests
 import time
 
+print("Starting Basic Sync Experiment")
 start_time = time.time()
 
 for number in range(1, 151):
