@@ -8,4 +8,8 @@ With git bash or bash or another shell emulation run `install_reqs.sh` (requires
 
 ## Run Test script
 
-run script `run_experiments.sh` (assumes conda env `regExp` exists)
+run script `run_experiments.sh` (assumes conda env `regExp` active)
+
+## Event loop close bug
+
+Initially there was a bug on windows, fix added referencing: [this](https://stackoverflow.com/questions/45600579/asyncio-event-loop-is-closed-when-getting-loop)
