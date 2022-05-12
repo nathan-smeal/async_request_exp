@@ -8,7 +8,7 @@ start_time = time.time()
 async def get_pokemon(session, url):
     async with session.get(url) as resp:
         pokemon = await resp.json()
-        return pokemon['name']
+        # return pokemon['name']
 
 
 async def main():
@@ -22,7 +22,8 @@ async def main():
 
         original_pokemon = await asyncio.gather(*tasks)
         for pokemon in original_pokemon:
-            print(pokemon)
+            passs
+            # print(pokemon)
 
 asyncio.run(main())
-print("--- %s seconds ---" % (time.time() - start_time))
+print("Advanced Async--- %s seconds ---" % (time.time() - start_time))

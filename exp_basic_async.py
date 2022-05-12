@@ -16,4 +16,4 @@ async def main():
                 # print(pokemon['name'])
 
 asyncio.run(main())
-print("--- %s seconds ---" % (time.time() - start_time))
+print("Basic Async--- %s seconds ---" % (time.time() - start_time))
